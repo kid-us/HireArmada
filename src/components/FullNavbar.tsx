@@ -64,7 +64,7 @@ export default function FullNavbar() {
         </button> */}
         <Link
           href="#"
-          className="px-5 py-2 rounded-full flex items-center justify-center text-white bg-linear-120 from-[#EC1699] to-[#FF4B2B] shadow-md hover:from-[#FF4B2B] hover:to-[#EC1699] transition-all duration-200 "
+          className="px-5 py-[11px] rounded-full flex items-center justify-center text-white bg-linear-120 from-[#EC1699] to-[#FF4B2B] shadow-md hover:from-[#FF4B2B] hover:to-[#EC1699] transition-all duration-200 text-sm"
         >
           Start Now
         </Link>

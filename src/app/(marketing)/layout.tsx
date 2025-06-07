@@ -8,7 +8,7 @@ export default function MarketingLayout({
 }) {
   return (
     <HireNowModalProvider>
-      <main className="min-h-screen min-w-full overflow-x-clip">
+      <main>
         <Navbar />
         {children}
         <Footer />
