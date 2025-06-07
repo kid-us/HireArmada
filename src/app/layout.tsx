@@ -1,0 +1,34 @@
+import type { Metadata } from "next";
+import { theBoldFont, raleway } from "./fonts";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Hire Armada",
+  description: "Hire Armada",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={` ${theBoldFont.variable}${raleway.variable} font-theboldfont font-raleway antialiased`}
+        style={{
+          backgroundImage: "url(/images/main-bg-texture.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "fixed",
+          minHeight: "100vh",
+          width: "100vw",
+          overflowX: "hidden",
+        }}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
