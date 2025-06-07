@@ -24,22 +24,24 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section
-      className={`${raleway.className} font-raleway relative z-20 py-20 flex flex-col items-center bg-transparent`}
+      className={`${raleway.className} font-raleway relative z-20 py-20 flex flex-col md:items-center bg-transparent`}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center">
-        <span
-          className={`${theBoldFont.className} font-theboldfont bg-gradient-to-r from-[#ff5c5c] to-[#ff6cab] bg-clip-text text-transparent`}
-        >
-          HOW IT WORKS
-        </span>
+      <h2
+        className={`${theBoldFont.className} text-4xl md:text-6xl font-extrabold md:text-center text-start font-theboldfont bg-gradient-to-r from-[#ff5c5c] to-[#ff6cab] bg-clip-text text-transparent`}
+      >
+        HOW IT WORKS
       </h2>
+      <p className={`${raleway.className} mb-10 md:mt-5 mt-3 font-raleway`}>
+        Our streamlined hiring process makes it easy to find and hire the right
+        developer in just a few steps:
+      </p>
       <div
-        className={`${raleway.className} font-raleway flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center items-stretch px-2`}
+        className={`${raleway.className} font-raleway flex flex-col md:flex-row gap-6 w-full max-w-6xl justify-center items-stretch`}
       >
         {steps.map((step, i) => (
           <div
             key={i}
-            className="group flex-1 rounded-3xl pb-0 shadow-2xl relative flex flex-col items-stretch min-h-[300px] md:min-h-[424px] max-w-sm mx-auto overflow-hidden bg-cover bg-center"
+            className="group flex-1 md:rounded-3xl rounded-xl pb-0 shadow-2xl relative flex flex-col items-stretch md:min-h-[424px] max-w-sm mx-auto overflow-hidden bg-cover bg-center"
             style={{
               boxShadow:
                 "0 8px 40px 0 rgba(255, 92, 92, 0.18), 0 1.5px 8px 0 rgba(0,0,0,0.10)",
@@ -69,7 +71,7 @@ export default function HowItWorks() {
           </div>
         ))}
       </div>
-      <p className="text-center text-gray-500 mt-8 text-base max-w-2xl">
+      <p className="text-center text-gray-500 mt-8 text-base max-w-2xl md:not-italic italic">
         It&apos;s this simple – from first call to coding with your new hire:
         days.
       </p>

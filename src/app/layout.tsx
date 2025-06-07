@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${theBoldFont.variable}${raleway.variable} font-theboldfont font-raleway antialiased`}
+        className={` ${theBoldFont.variable}${raleway.variable} font-theboldfont font-raleway antialiased !overflow-x-hidden`}
         style={{
           backgroundImage: "url(/images/main-bg-texture.png)",
           backgroundSize: "cover",
@@ -24,7 +24,6 @@ export default function RootLayout({
           backgroundAttachment: "fixed",
           minHeight: "100vh",
           width: "100vw",
-          overflowX: "hidden",
         }}
       >
         {children}

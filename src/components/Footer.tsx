@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="pt-12 lg:mx-[4em] mx-3">
+    <footer className="pt-12 lg:mx-[4em] mx-4">
       {/* Main white card */}
       <div className="rounded-2xl bg-white shadow lg:px-8 px-5 py-10">
         <div className="lg:flex justify-between gap-8 relative">

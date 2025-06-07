@@ -53,7 +53,7 @@ export default function Navbar() {
     >
       <div className="w-full flex justify-center">
         {/* Desktop Navigation */}
-        <div className="hidden md:block w-full">
+        <div className="hidden md:block w-full md:max-w-4xl">
           {atTop ? <FullNavbar /> : <NavLinksBar />}
         </div>
 

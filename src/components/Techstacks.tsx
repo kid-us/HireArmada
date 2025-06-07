@@ -198,12 +198,12 @@ export default function Techstacks() {
   }, []);
 
   return (
-    <section className="w-full md:max-w-7xl flex flex-col md:flex-row items-center justify-center py-16 md:py-32 px-4 md:px-0 max-w-7xl mx-auto overflow-hidden">
+    <section className="flex flex-col md:flex-row items-center justify-center py-16 md:py-32 md:px-0 overflow-hidden">
       {/* Left: Heading */}
       <div className="flex-1 flex flex-col items-start justify-center mb-12 md:mb-0 md:mr-12 text-left">
-        <span className="text-sm font-bold tracking-widest text-[#ff7a4d] uppercase mb-2">
+        <p className="text-sm font-bold tracking-widest text-[#ff7a4d] uppercase mb-2">
           Techstacks
-        </span>
+        </p>
         <h2
           className={`${theBoldFont.className} font-theboldfont text-3xl md:text-5xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-[#EC1699] to-[#FF4B2B] bg-clip-text text-transparent`}
         >

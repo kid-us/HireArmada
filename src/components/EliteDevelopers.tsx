@@ -1,6 +1,7 @@
 "use client";
 
 import { raleway, theBoldFont } from "@/app/fonts";
+import { Quote } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -74,7 +75,7 @@ export default function EliteDevelopers() {
 
   return (
     <section className="py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+      <div className="max-w-7xl mx-auto flex flex-col">
         {/* Title Section */}
         <div className="text-left md:text-center mb-8 md:mb-12">
           <span className=" text-sm font-bold tracking-widest text-[#ff7a4d] uppercase mb-2 block">
@@ -97,7 +98,7 @@ export default function EliteDevelopers() {
         {/* Carousel Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 w-full">
           {/* Left: Stacked Images */}
-          <div className="relative w-64 h-72 md:w-80 md:h-96 flex items-center justify-center flex-shrink-0 mb-8 md:mb-0">
+          <div className="relative w-80 h-72 md:w-96 md:h-96 flex items-center justify-center flex-shrink-0 mb-8 md:mb-0">
             {developers.map((dev, index) => {
               // Calculate position and z-index for stacking effect
               const isCurrent = index === currentIndex;
@@ -158,8 +159,8 @@ export default function EliteDevelopers() {
           </div>
 
           {/* Right: Testimonial Card */}
-          <div className="flex flex-col items-start w-full max-w-md md:py-8">
-            <div className="bg-[#F7F6FA] rounded-2xl p-6 md:p-8 shadow-lg w-full mb-4">
+          <div className="flex flex-col justify-center lg:h-96 lg:items-start items-center w-full max-w-md md:py-8">
+            <div className="bg-[#F7F6FB] rounded-4xl p-6 md:p-8 w-full mb-4">
               <h3
                 className={`${raleway.className} font-raleway text-xl md:text-2xl font-bold text-gray-900 mb-1`}
               >
@@ -174,13 +175,16 @@ export default function EliteDevelopers() {
                 </span>
               </p>
               <p
-                className={`${raleway.className} font-raleway text-gray-800 text-sm md:text-base`}
+                className={`${raleway.className} flex font-raleway text-gray-800`}
               >
-                &laquo; {developers[currentIndex].testimonial} &raquo;
+                <Quote size={12} className="mr-2 mt-1" />{" "}
+                {developers[currentIndex].testimonial}{" "}
+                <Quote size={12} className="mt-1" />
               </p>
             </div>
+
             {/* Navigation Arrows below the card */}
-            <div className="flex items-center gap-3 mt-2">
+            <div className="md:flex hidden gap-3 mt-2">
               <button
                 onClick={prevDeveloper}
                 className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-[#EC1699] text-[#EC1699] hover:bg-[#EC1699] hover:text-white transition-colors duration-200"
@@ -188,7 +192,7 @@ export default function EliteDevelopers() {
               >
                 <span className="text-lg">&#8592;</span>
               </button>
-              <div className="flex items-center gap-1">
+              {/* <div className="flex items-center gap-1">
                 {developers.map((_, idx) => (
                   <span
                     key={idx}
@@ -199,7 +203,7 @@ export default function EliteDevelopers() {
                     }`}
                   />
                 ))}
-              </div>
+              </div> */}
               <button
                 onClick={nextDeveloper}
                 className="w-9 h-9 flex items-center justify-center rounded-full border-2 border-[#EC1699] text-[#EC1699] hover:bg-[#EC1699] hover:text-white transition-colors duration-200"
