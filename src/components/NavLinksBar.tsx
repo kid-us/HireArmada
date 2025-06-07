@@ -28,7 +28,7 @@ export default function NavLinksBar() {
                   isActive
                     ? "bg-linear-120 from-[#EC1699] to-[#FF4B2B] shadow-md hover:from-[#FF4B2B] hover:to-[#EC1699] transition-all duration-200 text-white"
                     : "text-gray-800 hover:text-[#ff5c5c] bg-transparent"
-                }`}
+                } text-sm !font-normal`}
                 style={{
                   boxShadow: isActive
                     ? "0 2px 8px 0 rgba(255, 92, 92, 0.18)"

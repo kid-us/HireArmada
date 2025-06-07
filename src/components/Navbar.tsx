@@ -58,8 +58,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="w-full md:hidden px-2 mt-2">
-          <div className="flex items-center justify-between w-full px-4 py-3 bg-gradient-to-r from-[#f3e6d8] to-[#E9D9C7]  backdrop-blur-lg rounded-full">
+        <div className="w-full md:hidden px-2 mt-5">
+          <div className="flex items-center justify-between w-full px-4 py-2 shadow backdrop-blur-lg rounded-full">
             <div className="flex items-center justify-center flex-1">
               <div className="flex items-center">
                 <Image
