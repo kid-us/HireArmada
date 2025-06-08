@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { HireNowModalProvider } from "@/context/HireNowModalContext";
+import SmoothScroll from "../../components/SmoothScroll";
 export default function MarketingLayout({
   children,
 }: {
@@ -9,9 +10,11 @@ export default function MarketingLayout({
   return (
     <HireNowModalProvider>
       <main>
-        <Navbar />
-        {children}
-        <Footer />
+        <SmoothScroll>
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </main>
     </HireNowModalProvider>
   );
