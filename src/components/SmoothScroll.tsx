@@ -9,7 +9,7 @@ export default function SmoothScroll({
 }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 4,
+      duration: 5,
       smoothWheel: true,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
