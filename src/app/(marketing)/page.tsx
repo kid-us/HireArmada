@@ -2,7 +2,6 @@ import HowItWorks from "@/components/HowItWorks";
 import WhereOurTalentsAre from "@/components/WhereOurTalentsAre";
 import Techstacks from "@/components/Techstacks";
 import Hero from "@/components/Hero";
-import TestimonialSlider from "@/components/TestimonialSlider";
 import EliteDevelopers from "@/components/EliteDevelopers";
 
 export default function Home() {
