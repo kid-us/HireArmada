@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface Testimonial {
   quote: string;
