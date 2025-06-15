@@ -10,33 +10,35 @@ const page = () => {
             Terms Of Service
           </h1>
           <p>
-            Please read these Terms of Service ("Terms", "Terms of Service")
-            carefully, as they constitute a legally binding agreement between
-            you ("you" or "your," either an individual or a legal entity) and
-            Hire Armada LLC ("Hire Armada," "us," "we," or "our"). These Terms
-            govern your access to and use of the websites, media, platforms,
-            forums, portals, and any other online services offered by Hire
-            Armada, including, but not limited to, the{" "}
+            Please read these Terms of Service (&quot;Terms&quot;, &quot;Terms
+            of Service&quot;) carefully, as they constitute a legally binding
+            agreement between you (&quot;you&quot; or &quot;your,&quot; either
+            an individual or a legal entity) and Hire Armada LLC (&quot;Hire
+            Armada,&quot; &quot;us,&quot; &quot;we,&quot; or &quot;our&quot;).
+            These Terms govern your access to and use of the websites, media,
+            platforms, forums, portals, and any other online services offered by
+            Hire Armada, including, but not limited to, the{" "}
             <Link href="https://hirearmada.com/">https://hirearmada.com</Link>{" "}
             website and any media, software, programs, services, tools,
             features, databases, materials, content, products, platforms,
             forums, portals, or information available or sold on or through it
-            or used in connection with it (collectively, the "Services"). Your
-            use of the Services is subject to these Terms, our Privacy Policy,
-            and our Community Guidelines. Your access to and use of the Services
-            are contingent upon your acceptance of and compliance with these
-            Terms. These Terms apply to all visitors, users, and others who wish
-            to access or use the Services. By accessing or using the Services,
-            you agree to be bound by these Terms. If you do not agree with any
-            part of these terms, you do not have permission to access the
-            Services. Hire Armada LLC reserves the right, at its sole
-            discretion, to amend, change, modify, revise, or replace these Terms
-            at any time by posting the revised Terms on the Service. By
-            continuing to access or use our Services after any revisions become
-            effective, you agree to be bound by the revised terms. If you do not
-            agree to the new terms, you are no longer authorized to use the
-            Service. You are responsible for reviewing the Terms for any
-            changes, so please check back here every time you use the Services.
+            or used in connection with it (collectively, the
+            &quot;Services&quot;). Your use of the Services is subject to these
+            Terms, our Privacy Policy, and our Community Guidelines. Your access
+            to and use of the Services are contingent upon your acceptance of
+            and compliance with these Terms. These Terms apply to all visitors,
+            users, and others who wish to access or use the Services. By
+            accessing or using the Services, you agree to be bound by these
+            Terms. If you do not agree with any part of these terms, you do not
+            have permission to access the Services. Hire Armada LLC reserves the
+            right, at its sole discretion, to amend, change, modify, revise, or
+            replace these Terms at any time by posting the revised Terms on the
+            Service. By continuing to access or use our Services after any
+            revisions become effective, you agree to be bound by the revised
+            terms. If you do not agree to the new terms, you are no longer
+            authorized to use the Service. You are responsible for reviewing the
+            Terms for any changes, so please check back here every time you use
+            the Services.
           </p>
 
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
@@ -101,12 +103,12 @@ const page = () => {
             information, contact information, photos, user forum features,
             comments, questions, and other content or information (any such
             materials a user submits, posts, displays, provides, uploads, or
-            otherwise makes available on the Services is referred to as "User
-            Content"). User Content may be viewable by other users of the
-            Services and through third-party websites. As such, any User Content
-            may be treated as non-confidential and non-proprietary. All User
-            Content publicly posted or privately transmitted through the
-            Services is the sole responsibility of the person from whom such
+            otherwise makes available on the Services is referred to as
+            &quot;User Content&quot;). User Content may be viewable by other
+            users of the Services and through third-party websites. As such, any
+            User Content may be treated as non-confidential and non-proprietary.
+            All User Content publicly posted or privately transmitted through
+            the Services is the sole responsibility of the person from whom such
             User Content originated, and you access all such information and
             User Content at your own risk. We claim no ownership rights over
             User Content created by you. The User Content you create remains
@@ -129,9 +131,9 @@ const page = () => {
             and/or likeness as contained in your User Content, in whole or in
             part, and in any form, media, or technology, whether now known or
             hereafter developed, for use in connection with the Services and our
-            (and our successors' and affiliates') business, including without
-            limitation for promoting and redistributing part or all of the
-            Services (and derivative works thereof) in any media formats and
+            (and our successors&quot; and affiliates&quot;) business, including
+            without limitation for promoting and redistributing part or all of
+            the Services (and derivative works thereof) in any media formats and
             through any media channels. You also hereby grant each user of the
             Services a non-exclusive right to access your User Content through
             the Services, and to use, reproduce, distribute, display, and
@@ -144,17 +146,17 @@ const page = () => {
             with the Services. In connection with your User Content, you affirm,
             represent, and warrant the following: (a) you have the written
             consent of each and every identifiable natural person in the User
-            Content, if any, to use such person's name or likeness in the manner
-            contemplated by the Service and these Terms, and each such person
-            has released you from any liability that may arise in relation to
-            such use; (b) your User Content and Hire Armada's use thereof as
-            contemplated by these Terms and the Service will not violate any law
-            or infringe any rights of any third party, including but not limited
-            to any intellectual property rights, privacy rights, publicity
-            rights, contract rights, or any other rights of any person or
-            entity; and (c) your User Content does not contain any defamatory,
-            libelous, offensive, indecent, or otherwise unlawful material or
-            content.
+            Content, if any, to use such person&quot;s name or likeness in the
+            manner contemplated by the Service and these Terms, and each such
+            person has released you from any liability that may arise in
+            relation to such use; (b) your User Content and Hire Armada&quot;s
+            use thereof as contemplated by these Terms and the Service will not
+            violate any law or infringe any rights of any third party, including
+            but not limited to any intellectual property rights, privacy rights,
+            publicity rights, contract rights, or any other rights of any person
+            or entity; and (c) your User Content does not contain any
+            defamatory, libelous, offensive, indecent, or otherwise unlawful
+            material or content.
           </p>
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
             PROHIBITED ACTIVITIES
@@ -174,12 +176,13 @@ const page = () => {
             <p>
               2. Post, upload, or distribute any content that is unlawful,
               defamatory, libelous, harmful, threatening, harassing, abusive,
-              invasive of another's privacy, or otherwise objectionable.
+              invasive of another&quot;s privacy, or otherwise objectionable.
             </p>
             <p>
               3. Transmit, or procure the sending of, any advertising or
-              promotional material, including any "junk mail," "chain letter,"
-              "spam," or any other similar solicitation.
+              promotional material, including any &quot;junk mail,&quot;
+              &quot;chain letter,&quot; &quot;spam,&quot; or any other similar
+              solicitation.
             </p>
 
             <p>
@@ -190,17 +193,17 @@ const page = () => {
             </p>
 
             <p>
-              5. Engage in any other conduct that restricts or inhibits anyone's
-              use or enjoyment of the Services, or which, as determined by us,
-              may harm Hire Armada LLC or users of the Services, or expose them
-              to liability.
+              5. Engage in any other conduct that restricts or inhibits
+              anyone&quot;s use or enjoyment of the Services, or which, as
+              determined by us, may harm Hire Armada LLC or users of the
+              Services, or expose them to liability.
             </p>
 
             <p>
               6. Use the Services in any manner that could disable, overburden,
-              damage, or impair the site or interfere with any other party's use
-              of the Services, including their ability to engage in real-time
-              activities through the Services.
+              damage, or impair the site or interfere with any other
+              party&quot;s use of the Services, including their ability to
+              engage in real-time activities through the Services.
             </p>
 
             <p>
@@ -262,7 +265,7 @@ const page = () => {
             and its licensee and licensors, and their employees, contractors,
             agents, officers, and directors, from and against any and all
             claims, damages, obligations, losses, liabilities, costs or debt,
-            and expenses (including but not limited to attorney's fees),
+            and expenses (including but not limited to attorney&quot;s fees),
             resulting from or arising out of: (a) your use and access of the
             Services, by you or any person using your account and password; (b)
             a breach of these Terms, including but not limited to any User
@@ -270,8 +273,8 @@ const page = () => {
             obligations under these Terms; (c) your User Content; (d) your
             violation of any third- party right, including but not limited to
             any intellectual property right or privacy right; (e) your violation
-            of any applicable law; or (f) any other party's access and use of
-            the Services with your unique username, password, or other
+            of any applicable law; or (f) any other party&quot;s access and use
+            of the Services with your unique username, password, or other
             appropriate security code.
           </p>
 
@@ -280,12 +283,12 @@ const page = () => {
           </h2>
           <p>
             Your use of the Services is at your sole risk. The Services are
-            provided on an "as-is" and "as- available" basis. The Services are
-            provided without warranties of any kind, whether express or implied,
-            including, but not limited to, implied warranties of
-            merchantability, fitness for a particular purpose, non-infringement,
-            or course of performance. Hire Armada LLC, its subsidiaries,
-            affiliates, and its licensors do not warrant that:
+            provided on an &quot;as-is&quot; and &quot;as- available&quot;
+            basis. The Services are provided without warranties of any kind,
+            whether express or implied, including, but not limited to, implied
+            warranties of merchantability, fitness for a particular purpose,
+            non-infringement, or course of performance. Hire Armada LLC, its
+            subsidiaries, affiliates, and its licensors do not warrant that:
           </p>
           <div className="ms-3">
             <p>
@@ -321,7 +324,7 @@ const page = () => {
           </p>
 
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
-            EXCLUSIONS{" "}
+            EXCLUSIONS
           </h2>
           <p>
             Some jurisdictions do not allow the exclusion of certain warranties
@@ -350,8 +353,8 @@ const page = () => {
           <p>
             We reserve the right, at our sole discretion, to modify or replace
             these Terms at any time. If a revision is material, we will provide
-            at least 30 days' notice prior to any new terms taking effect. What
-            constitutes a material change will be determined at our sole
+            at least 30 days&quot; notice prior to any new terms taking effect.
+            What constitutes a material change will be determined at our sole
             discretion. By continuing to access or use our Services after any
             revisions become effective, you agree to be bound by the revised
             terms. If you do not agree to the new terms, you are no longer
@@ -366,8 +369,8 @@ const page = () => {
             hello@hirearmada.com. Last Updated: September 13, 2023 Please note
             that the terms and conditions provided above are based on the
             information available up to September 2023. For the most up-to-date
-            information regarding Hire Armada's Terms of Service, you should
-            visit their official website or contact them directly.
+            information regarding Hire Armada&quot;s Terms of Service, you
+            should visit their official website or contact them directly.
           </p>
         </div>
       </section>
