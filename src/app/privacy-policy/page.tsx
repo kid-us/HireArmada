@@ -159,7 +159,7 @@ const page = () => {
             defamatory, libelous, offensive, indecent, or otherwise unlawful
             material or content.
           </p>
-          
+
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
             PROHIBITED ACTIVITIES
           </h2>
@@ -180,6 +180,7 @@ const page = () => {
               defamatory, libelous, harmful, threatening, harassing, abusive,
               invasive of another&quot;s privacy, or otherwise objectionable.
             </p>
+            
             <p>
               3. Transmit, or procure the sending of, any advertising or
               promotional material, including any &quot;junk mail,&quot;
