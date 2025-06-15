@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="pt-12 flex items-center justify-center">
+    <footer className="pt-12 flex items-center justify-center mx-4">
       <div className="w-full max-w-7xl">
         {/* Main white card */}
         <div className="rounded-2xl bg-white shadow lg:px-8 px-5 py-10">
@@ -143,7 +143,10 @@ export default function Footer() {
         {/* Copyright and privacy */}
         <div className="flex justify-between items-center text-xs text-black md:px-0 pb-10">
           <span>© 2025 — Copyright</span>
-          <Link href="#" className="text-black hover:text-[#EC1699]">
+          <Link
+            href="/privacy-policy"
+            className="text-black hover:text-[#EC1699]"
+          >
             Privacy
           </Link>
         </div>

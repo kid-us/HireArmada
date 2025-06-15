@@ -59,7 +59,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         <div className="w-full md:hidden px-2 mt-5">
-          <div className="flex items-center justify-between w-full px-4 py-2 shadow backdrop-blur-lg rounded-full">
+          <div className="flex items-center justify-between bg-black/20 w-full px-4 py-2 shadow backdrop-blur-lg rounded-2xl">
             <div className="flex items-center justify-center flex-1">
               <div className="flex items-center">
                 <Image
@@ -69,7 +69,7 @@ export default function Navbar() {
                   height={28}
                   className="mr-2"
                 />
-                <span className="font-bold text-lg text-gray-800">
+                <span className="font-semibold text-lg text-white">
                   Hire Armada
                 </span>
               </div>
@@ -81,9 +81,9 @@ export default function Navbar() {
                 aria-label="Toggle mobile menu"
               >
                 {mobileMenuOpen ? (
-                  <XClose className="h-6 w-6 text-gray-800" />
+                  <XClose className="h-6 w-6 text-white" />
                 ) : (
-                  <Menu04 className="h-6 w-6 text-gray-800" />
+                  <Menu04 className="h-6 w-6 text-white" />
                 )}
               </button>
             </div>

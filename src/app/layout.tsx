@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { theBoldFont, raleway } from "./fonts";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hire Armada",
@@ -26,7 +28,11 @@ export default function RootLayout({
           width: "100vw",
         }}
       >
+        {/* <SmoothScroll> */}
+        <Navbar />
         {children}
+        <Footer />
+        {/* </SmoothScroll> */}
       </body>
     </html>
   );

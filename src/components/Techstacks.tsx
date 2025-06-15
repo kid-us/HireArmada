@@ -199,7 +199,7 @@ export default function Techstacks() {
 
   return (
     <section className="flex flex-col md:flex-row items-center justify-center py-16 md:py-60">
-      <div className="flex w-full max-w-7xl">
+      <div className="flex flex-wrap w-full max-w-7xl">
         {/* Left: Heading */}
         <div className="flex-1 flex flex-col items-start justify-center mb-12 md:mb-0 md:mr-12 text-left">
           <p className="text-sm font-bold tracking-widest text-[#ff7a4d] uppercase mb-2">
