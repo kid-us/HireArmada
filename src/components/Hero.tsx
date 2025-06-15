@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useHireNowModal } from "@/context/HireNowModalContext";
 import { theBoldFont } from "@/app/fonts";
+
 const developers = [
   {
     name: "Juma Hassan",
@@ -14,12 +15,28 @@ const developers = [
     style: "rotate-10 -top-8 left-16",
   },
   {
+    name: "Juma Hassan",
+    position: "Front-end Developer",
+    techStacks: ["React", "Python", "+2"],
+    img: "/images/elite-developers/01.png",
+    color: "bg-[#b2e0e6]",
+    style: "rotate-35 -top-28 -left-56",
+  },
+  {
     name: "Adekunle Adebayo",
     position: "Front-end Developer",
     techStacks: ["React", "Python", "+2"],
     img: "/images/elite-developers/02.png",
     color: "bg-[#f7c873]",
     style: "rotate-16 top-[14rem] left-16",
+  },
+  {
+    name: "Adekunle Adebayo",
+    position: "Front-end Developer",
+    techStacks: ["React", "Python", "+2"],
+    img: "/images/elite-developers/02.png",
+    color: "bg-[#f7c873]",
+    style: "rotate-10 top-[11rem] -left-56",
   },
   {
     name: "Louisa Martin",
@@ -30,12 +47,28 @@ const developers = [
     style: "-rotate-16 top-[30rem] left-8",
   },
   {
+    name: "Louisa Martin",
+    position: "Full-stack Developer",
+    techStacks: ["Vue", "Django", "AWS"],
+    img: "/images/elite-developers/03.png",
+    color: "bg-[#e2c3e6]",
+    style: "rotate-30 top-[30rem] -left-60",
+  },
+  {
     name: "Thando Mthembu",
     position: "Back-end Developer",
     techStacks: ["Node.js", "Go", "MongoDB"],
     img: "/images/elite-developers/02.png",
     color: "bg-[#f7c873]",
     style: "-rotate-10 -top-8 right-16",
+  },
+  {
+    name: "Thando Mthembu",
+    position: "Back-end Developer",
+    techStacks: ["Node.js", "Go", "MongoDB"],
+    img: "/images/elite-developers/02.png",
+    color: "bg-[#f7c873]",
+    style: "-rotate-30 -top-28 -right-52",
   },
   {
     name: "Adekunle Adebayo",
@@ -49,9 +82,25 @@ const developers = [
     name: "Adekunle Adebayo",
     position: "Front-end Developer",
     techStacks: ["React", "Python", "+2"],
+    img: "/images/elite-developers/05.png",
+    color: "bg-[#b7d7c8]",
+    style: "-rotate-16 top-[11rem] -right-56",
+  },
+  {
+    name: "Adekunle Adebayo",
+    position: "Front-end Developer",
+    techStacks: ["React", "Python", "+2"],
     img: "/images/elite-developers/09.png",
     color: "bg-[#b2e0e6]",
     style: "rotate-16 top-[30rem] right-8",
+  },
+  {
+    name: "Adekunle Adebayo",
+    position: "Front-end Developer",
+    techStacks: ["React", "Python", "+2"],
+    img: "/images/elite-developers/09.png",
+    color: "bg-[#b2e0e6]",
+    style: "rotate-0 top-[30rem] -right-52",
   },
 ];
 
@@ -68,43 +117,45 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* Floating Developer Cards - Hidden on Mobile */}
-      <div className="absolute inset-0 pointer-events-none z-10 mt-10 hidden lg:block">
-        {developers.map((dev, i) => (
-          <div
-            key={i}
-            className={`absolute ${dev.style} w-[180px] h-[200px] shadow-xl rounded-lg overflow-hidden ${dev.color} flex flex-col justify-end items-stretch opacity-95`}
-            style={{ zIndex: 1 + i }}
-          >
-            <div className="relative w-full h-full flex-1">
-              <Image
-                src={dev.img}
-                alt={dev.name}
-                fill
-                className="object-cover w-full h-full"
-                sizes="256px"
-                priority={i === 0}
-              />
-              <div className="absolute bottom-0 left-0 w-full ps-4 py-2 bg-black/20 backdrop-blur-[1px] flex flex-col rounded-b-lg">
-                <span className="font-semibold text-gray-100 text-xs mb-0.5 drop-shadow-sm">
-                  {dev.name}
-                </span>
-                <span className="text-gray-100 text-[8px] mb-2 drop-shadow-sm !font-normal">
-                  {dev.position}
-                </span>
-                <div className="flex flex-wrap gap-2">
-                  {dev.techStacks.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="bg-white/10 border border-white text-gray-300 text-[8px] font-medium px-2 py-[1px] rounded-full backdrop-blur-sm shadow-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+      <div className="absolute inset-0 pointer-events-none z-10 mt-10 hidden lg:flex overflow-visible">
+        <div className="relative w-full h-full">
+          {developers.map((dev, i) => (
+            <div
+              key={i}
+              className={`absolute ${dev.style} w-[180px] h-[200px] shadow-xl rounded-lg overflow-hidden ${dev.color} flex flex-col justify-end items-stretch opacity-95`}
+              style={{ zIndex: 1 + i }}
+            >
+              <div className="relative w-full h-full flex-1">
+                <Image
+                  src={dev.img}
+                  alt={dev.name}
+                  fill
+                  className="object-cover w-full h-full"
+                  sizes="256px"
+                  priority={i === 0}
+                />
+                <div className="absolute bottom-0 left-0 w-full ps-4 py-2 bg-black/20 backdrop-blur-[1px] flex flex-col rounded-b-lg">
+                  <span className="font-semibold text-gray-100 text-xs mb-0.5 drop-shadow-sm">
+                    {dev.name}
+                  </span>
+                  <span className="text-gray-100 text-[8px] mb-2 drop-shadow-sm !font-normal">
+                    {dev.position}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {dev.techStacks.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-white/10 border border-white text-gray-300 text-[8px] font-medium px-2 py-[1px] rounded-full backdrop-blur-sm shadow-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Hero Section */}
