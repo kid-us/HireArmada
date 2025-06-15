@@ -10,11 +10,11 @@ export default function MarketingLayout({
   return (
     <HireNowModalProvider>
       <main>
-        <SmoothScroll>
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScroll>
+        {/* <SmoothScroll> */}
+        <Navbar />
+        {children}
+        <Footer />
+        {/* </SmoothScroll> */}
       </main>
     </HireNowModalProvider>
   );

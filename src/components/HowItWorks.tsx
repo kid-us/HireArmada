@@ -36,7 +36,7 @@ export default function HowItWorks() {
         developer in just a few steps:
       </p>
       <div
-        className={`${raleway.className} font-raleway flex flex-col md:flex-row gap-6 w-full max-w-6xl justify-center items-stretch`}
+        className={`${raleway.className} font-raleway flex flex-col md:flex-row gap-6 w-full max-w-7xl justify-center items-stretch`}
       >
         {steps.map((step, i) => (
           <div

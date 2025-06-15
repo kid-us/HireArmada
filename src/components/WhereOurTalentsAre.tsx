@@ -2,8 +2,8 @@ import { raleway, theBoldFont } from "@/app/fonts";
 import Globe from "./globe";
 export default function WhereOurTalentsAre() {
   return (
-    <section>
-      <div className="w-full lg:grid grid-cols-2 gap-10">
+    <section className="flex justify-center">
+      <div className="w-full max-w-7xl lg:grid grid-cols-2 gap-10">
         <div className="flex flex-col justify-center">
           <p className="mb-2 text-sm font-bold tracking-widest text-[#ff7a4d] uppercase">
             developers
