@@ -81,7 +81,8 @@ export default function TestimonialSlider({
                   rotate: randomRotateY(),
                 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute inset-0 origin-bottom"
+                className={`absolute inset-0 origin-bottom cursor-pointer`}
+                onClick={() => setActive(index)}
               >
                 <Image
                   src={testimonial.image}
