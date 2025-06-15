@@ -3,6 +3,8 @@ import { theBoldFont, raleway } from "./fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
+import { HireNowModalProvider } from "@/context/HireNowModalContext";
 
 export const metadata: Metadata = {
   title: "Hire Armada",
@@ -28,11 +30,13 @@ export default function RootLayout({
           width: "100vw",
         }}
       >
-        {/* <SmoothScroll> */}
-        <Navbar />
-        {children}
-        <Footer />
-        {/* </SmoothScroll> */}
+        <HireNowModalProvider>
+          <SmoothScroll>
+            <Navbar />
+            {children}
+            <Footer />
+          </SmoothScroll>
+        </HireNowModalProvider>
       </body>
     </html>
   );
