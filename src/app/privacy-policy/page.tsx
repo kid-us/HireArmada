@@ -94,6 +94,7 @@ const page = () => {
             phone number to send you other messages, such as changes to features
             of the Services and other information about our organization.
           </p>
+
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
             USER CONTENT
           </h2>
@@ -158,6 +159,7 @@ const page = () => {
             defamatory, libelous, offensive, indecent, or otherwise unlawful
             material or content.
           </p>
+          
           <h2 className="text-2xl font-semibold mt-5 pb-2 mb-3 border-b border-zinc-300">
             PROHIBITED ACTIVITIES
           </h2>
