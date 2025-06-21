@@ -50,10 +50,6 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
     const adjustedTime =
       (currentTime + columnDelay) % (cycleInterval * logos.length);
     const currentIndex = Math.floor(adjustedTime / cycleInterval);
-    const CurrentLogo = useMemo(
-      () => logos[currentIndex].img,
-      [logos, currentIndex]
-    );
 
     return (
       <motion.div
