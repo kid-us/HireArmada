@@ -58,54 +58,9 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="w-full md:hidden px-2 mt-5">
-          <div className="flex items-center justify-between bg-black/20 w-full px-4 py-2 shadow backdrop-blur-lg rounded-2xl">
-            <div className="flex items-center justify-center flex-1">
-              <div className="flex items-center">
-                <Image
-                  src="/logo.svg"
-                  alt="Hire Armada Logo"
-                  width={28}
-                  height={28}
-                  className="mr-2"
-                />
-                <span className="font-semibold text-lg text-white">
-                  Hire Armada
-                </span>
-              </div>
-            </div>
-            <div className="flex justify-end flex-1">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-full transition"
-                aria-label="Toggle mobile menu"
-              >
-                {mobileMenuOpen ? (
-                  <XClose className="h-6 w-6 text-white" />
-                ) : (
-                  <Menu04 className="h-6 w-6 text-white" />
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu Overlay */}
-        <div
-          className={`fixed inset-0 bg-[#f3e6d8] z-40 md:hidden transition-opacity duration-300 ${
-            mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-          onClick={() => setMobileMenuOpen(false)}
-        />
-
-        {/* Mobile Menu Drawer */}
-        <div
-          className={`fixed mt-2 top-0 right-0 h-screen w-full z-100 md:hidden transform transition-transform duration-300 ease-in-out ${
-            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } flex flex-col`}
-        >
-          <div className="flex px-2">
-            <div className="flex items-center justify-between w-full px-4 py-3 bg-[#ecd5bb] rounded-full">
+        <div className="relative w-full md:hidden px-4 mt-5">
+          <div className="bg-black/30 shadow backdrop-blur-lg rounded-2xl">
+            <div className="flex items-center justify-between w-full px-4 py-2">
               <div className="flex items-center justify-center flex-1">
                 <div className="flex items-center">
                   <Image
@@ -115,50 +70,68 @@ export default function Navbar() {
                     height={28}
                     className="mr-2"
                   />
-                  <span className="font-bold text-lg text-gray-800">
+                  <span className="font-semibold text-lg text-white">
                     Hire Armada
                   </span>
                 </div>
               </div>
               <div className="flex justify-end flex-1">
                 <button
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   className="p-2 rounded-full transition"
-                  aria-label="Close menu"
+                  aria-label="Toggle mobile menu"
                 >
-                  <XClose className="h-6 w-6 text-gray-800" />
+                  {mobileMenuOpen ? (
+                    <XClose className="h-6 w-6 text-white" />
+                  ) : (
+                    <Menu04 className="h-6 w-6 text-white" />
+                  )}
                 </button>
               </div>
             </div>
-          </div>
 
-          <div className="flex-grow flex flex-col justify-start p-10 bg-[#f3e6d8]">
-            <ul className="space-y-6">
-              <li>
-                <Link
-                  href="/careers"
-                  className="block text-base font-medium text-gray-800"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blogs"
-                  className="block text-base font-medium text-gray-800"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li className="pt-4">
-                <Link
-                  href="#"
-                  className="block w-full px-4 py-3 rounded-md bg-[#FF4B2B] text-white font-medium text-center"
-                >
-                  Hire Talent
-                </Link>
-              </li>
-            </ul>
+            {/* Animated Menu */}
+            <div
+              className={`
+        transition-all duration-400 ease-in-out overflow-hidden
+        ${
+          mobileMenuOpen
+            ? "max-h-96 opacity-100 translate-y-0"
+            : "max-h-0 opacity-0 -translate-y-5"
+        }
+      `}
+            >
+              <div className="px-6 py-5">
+                <ul className="space-y-4">
+                  <li>
+                    <Link
+                      href="/careers"
+                      className="block text-base font-medium text-white"
+                    >
+                      Careers
+                    </Link>
+                  </li>
+                  <hr className="border-zinc-300" />
+                  <li>
+                    <Link
+                      href="/blogs"
+                      className="block text-base font-medium text-white"
+                    >
+                      Blogs
+                    </Link>
+                  </li>
+                  <hr className="border-zinc-300" />
+                  <li className="pt-4">
+                    <Link
+                      href="#"
+                      className="block w-full px-4 py-3 rounded-full bg-[#FF4B2B] text-white font-medium text-center"
+                    >
+                      Hire Talent
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
