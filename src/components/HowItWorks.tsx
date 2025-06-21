@@ -71,7 +71,7 @@ export default function HowItWorks() {
           </div>
         ))}
       </div>
-      <p className="text-center text-gray-500 mt-8 text-base max-w-2xl md:not-italic italic">
+      <p className="text-center text-black mt-8 text-base max-w-2xl md:not-italic italic">
         It&apos;s this simple – from first call to coding with your new hire:
         days.
       </p>

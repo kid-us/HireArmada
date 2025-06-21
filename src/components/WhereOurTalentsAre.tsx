@@ -14,7 +14,7 @@ export default function WhereOurTalentsAre() {
             WHERE OUR TALENTS ARE
           </h2>
           <p
-            className={`${raleway.className} font-raleway text-gray-600 leading-relaxed`}
+            className={`${raleway.className} font-raleway text-black leading-relaxed`}
           >
             Tap into a truly global talent pool. HIRE Armada&apos;s developers
             are located across North America, Latin America, Europe, Africa, and

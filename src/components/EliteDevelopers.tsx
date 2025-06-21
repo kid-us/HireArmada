@@ -54,7 +54,7 @@ const EliteDevelopers = () => {
           ELITE DEVELOPERS
         </h2>
         <p
-          className={`${raleway.className} font-raleway text-base md:text-lg text-gray-700 max-w-3xl md:mx-auto`}
+          className={`${raleway.className} font-raleway text-base md:text-lg text-black max-w-3xl md:mx-auto`}
         >
           Join the ranks of companies who have boosted their teams with HIRE
           Armada developers. Here are a few examples of successful placements
