@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useHireNowModal } from "@/context/HireNowModalContext";
 import { theBoldFont } from "@/app/fonts";
+import { LogoCarousel } from "./LogoCarousel";
 
 const developers = [
   {
@@ -104,11 +105,11 @@ const developers = [
   },
 ];
 
-const logos = [
-  { src: "/partner-1.png", alt: "Logoipsum 1" },
-  { src: "/partner-2.png", alt: "Logoipsum 2" },
-  { src: "/partner-3.png", alt: "Logoipsum 3" },
-  { src: "/partner-4.png", alt: "Logoipsum 4" },
+const allLogos = [
+  { id: 1, name: "Logoipsum 1", img: "/partner-1.png" },
+  { id: 2, name: "Logoipsum 2", img: "/partner-2.png" },
+  { id: 3, name: "Logoipsum 3", img: "/partner-3.png" },
+  { id: 4, name: "Logoipsum 4", img: "/partner-4.png" },
 ];
 
 export default function Hero() {
@@ -196,43 +197,12 @@ export default function Hero() {
             {/* Trusted Logos */}
             <div className="flex justify-center">
               <div className="w-full md:w-[70%] mt-12 flex flex-col items-start md:items-center">
-                <p className="mb-4 font-bold text-xl">
+                <p className="mb-4 font-semibold md:text-xl">
                   Trusted by leading companies worldwide
                 </p>
-
-                {/* Infinite scroll logos */}
-                <div className="w-full relative overflow-hidden whitespace-nowrap py-4 group [mask-image:_linear-gradient(to_right,_transparent_0,_white_40px,white_calc(100%-40px),_transparent_100%)]">
-                  <div className="animate-slide-left group-hover:animation-pause inline-flex w-max items-center">
-                    {logos.map((logo, i) => (
-                      <div
-                        key={i}
-                        className="mx-5 flex items-center justify-center h-full"
-                      >
-                        <Image
-                          src={logo.src}
-                          alt={logo.alt}
-                          width={100}
-                          height={60}
-                          className="object-contain"
-                        />
-                      </div>
-                    ))}
-
-                    {/* Duplicate logos for seamless looping */}
-                    {logos.map((logo, i) => (
-                      <div
-                        key={`dup-${i}`}
-                        className="mx-5 flex items-center justify-center h-full"
-                      >
-                        <Image
-                          src={logo.src}
-                          alt={logo.alt}
-                          width={100}
-                          height={60}
-                          className="object-contain"
-                        />
-                      </div>
-                    ))}
+                <div className="space-y-8">
+                  <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8">
+                    <LogoCarousel columnCount={3} logos={allLogos} />
                   </div>
                 </div>
               </div>
