@@ -8,7 +8,7 @@ export default function SmoothScroll({
 }: {
   children: React.ReactNode;
 }) {
-  const [opacity, setOpacity] = useState(0.2); // initial light gradient
+  const [opacity, setOpacity] = useState(0.1);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,13 +19,16 @@ export default function SmoothScroll({
 
       const scrollPercent = scrollTop / maxScroll;
 
-      if (scrollPercent < 0.95 && scrollTop > windowHeight) {
-        setOpacity(0.3);
+      if (scrollPercent >= 0.95) {
+        setOpacity(0.1);
+      } else if (scrollTop > windowHeight) {
+        setOpacity(0.35);
       } else {
-        setOpacity(0.2);
+        setOpacity(0.1);
       }
     };
 
+    handleScroll(); // Call on mount
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -51,7 +54,7 @@ export default function SmoothScroll({
     <main className="relative overflow-hidden">
       {/* Gradient Background */}
       <div
-        className="fixed top-0 left-0 w-full h-full -z-10"
+        className="fixed top-0 left-0 w-full h-full -z-10 transition-opacity duration-500"
         style={{
           background: "linear-gradient(to bottom, #FF4B2B, #FF416C)",
           opacity,
